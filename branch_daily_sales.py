@@ -27,10 +27,10 @@ EXPECTED_COLUMNS = [
        "quantity",
        "region",
        "sub_region",
-       "Total_Amount_KSH", 
-       "Total_Amount_USD",
-       "Total_Amount_UGX",
-       "Total_Amount_TSH"]
+       "total_amount_ksh", 
+       "total_amount_usd",
+       "total_amount_ugx",
+       "total_amount_tzs"]
 
 
 COLUMN_ALIASES = {
@@ -40,7 +40,7 @@ COLUMN_ALIASES = {
     "total_amountusd" : "total_amount_usd",
     "totalamountksh": "total_amount_ksh",
     "totalamountugx": "total_amount_ugx",
-    "totalamounttsh":"total_amount_tsh"
+    "totalamounttzs":"total_amount_tzs"
 
 }
 
@@ -129,7 +129,7 @@ def enforce_data_types(df: pd.DataFrame) -> pd.DataFrame:
         "total_amount_ksh",
         "total_amount_usd",
         "total_amount_ugx", 
-        "total_amount_tsh",
+        "total_amount_tzs",
     ]
 
     for col in numeric_cols:
